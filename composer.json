@@ -1,0 +1,83 @@
+{
+    "prefer-stable": true,
+    "minimal-stability": "dev",
+    "name": "erebot/annick",
+    "description": "Custom Erebot install",
+    "keywords": ["IRC", "bot"],
+    "homepage": "https://github.com/Erebot/Erebot",
+    "license": "GPL-3.0+",
+    "authors": [
+        {
+            "name": "François Poirotte",
+            "email": "clicky@erebot.net",
+            "role": "lead"
+        }
+    ],
+    "support": {
+        "email": "erebot@erebot.net",
+        "issues": "https://github.com/Erebot/Erebot/issues",
+        "wiki": "http://erebot.github.io/Erebot/",
+        "irc": "irc://irc.iiens.net/Erebot",
+        "source": "https://github.com/Erebot/Erebot"
+    },
+    "require": {
+        "ext-openssl": "*",
+        "ext-pcntl": "*",
+        "ext-posix": "*",
+
+        "doxphp/doxphp": "*",
+
+        "deresh/sfyaml": "dev-master",
+        "fpoirotte/file_gettext": "dev-master",
+        "pear/console_commandline": "dev-trunk",
+        "pear/pear_exception": "dev-master",
+
+        "erebot/api": "dev-master",
+        "erebot/callable-wrapper": "dev-master",
+        "erebot/dom": "dev-master",
+        "erebot/erebot": "dev-master",
+        "erebot/generic-doc": "dev-master",
+        "erebot/installers": "dev-master",
+        "erebot/intl": "dev-master",
+        "erebot/plop": "dev-master",
+        "erebot/styling": "dev-master",
+        "erebot/timer": "dev-master",
+        "erebot/uri": "dev-master",
+
+        "erebot/admin-module": "dev-master",
+        "erebot/autoconnect-module": "dev-master",
+        "erebot/autoident-module": "dev-master",
+        "erebot/autojoin-module": "dev-master",
+        "erebot/az-module": "dev-master",
+        "erebot/countdown-module": "dev-master",
+        "erebot/ctcpresponder-module": "dev-master",
+        "erebot/gof-module": "dev-master",
+        "erebot/helper-module": "dev-master",
+        "erebot/ircconnector-module": "dev-master",
+        "erebot/irctracker-module": "dev-master",
+        "erebot/lagchecker-module": "dev-master",
+        "erebot/math-module": "dev-master",
+        "erebot/minised-module": "dev-master",
+        "erebot/phpfilter-module": "dev-master",
+        "erebot/pingreply-module": "dev-master",
+        "erebot/ratelimiter-module": "dev-master",
+        "erebot/roulette-module": "dev-master",
+        "erebot/servercapabilities-module": "dev-master",
+        "erebot/triggerregistry-module": "dev-master",
+        "erebot/tv-module": "dev-master",
+        "erebot/uno-module": "dev-master",
+        "erebot/watchlist-module": "dev-master",
+        "erebot/webgetter-module": "dev-master",
+        "erebot/wordlists-module": "dev-master"
+    },
+    "autoload": {
+        "psr-0": {
+            "": "src/"
+        }
+    },
+    "extra": {
+        "branch-alias": {
+            "dev-master": "1.0.x-dev"
+        }
+    }
+}

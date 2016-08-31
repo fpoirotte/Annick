@@ -1,0 +1,77 @@
+<configuration
+    xmlns="http://www.erebot.net/xmlns/erebot"
+    version="1.2.3"
+    language="fr-FR"
+    timezone="Europe/Paris"
+>
+    <modules>
+        <module name="\Erebot\Module\Admin">
+            <param name="admins" value="*!*@**.erebot.net *!*@erebot.net"/>
+        </module>
+        <module name="\Erebot\Module\AutoConnect"/>
+        <module name="\Erebot\Module\AZ">
+        </module>
+        <module name="\Erebot\Module\Countdown"/>
+        <module name="\Erebot\Module\CtcpResponder"/>
+        <module name="\Erebot\Module\GoF"/>
+        <module name="\Erebot\Module\Helper"/>
+<!--        <module name="\Erebot\Module\Inspector"/>-->
+        <module name="\Erebot\Module\IrcConnector">
+            <param name="nickname" value="Annick"/>
+        </module>
+        <module name="\Erebot\Module\IrcTracker"/>
+        <module name="\Erebot\Module\LagChecker"/>
+        <module name="\Erebot\Module\Math"/>
+        <module name="\Erebot\Module\MiniSed"/>
+        <module name="\Erebot\Module\PhpFilter"/>
+        <module name="\Erebot\Module\PingReply"/>
+<!--        <module name="\Erebot\Module\RateLimiter"/>-->
+        <module name="\Erebot\Module\Roulette"/>
+        <module name="\Erebot\Module\ServerCapabilities"/>
+        <module name="\Erebot\Module\TriggerRegistry"/>
+        <module name="\Erebot\Module\TV"/>
+        <module name="\Erebot\Module\Uno"/>
+        <module name="\Erebot\Module\WatchList"/>
+        <module name="\Erebot\Module\WebGetter">
+            <param name="1.trigger" value="ssi"/>
+            <param name="1.url" value="http://cyber.excusesecu.fr/?$(1)s"/>
+            <param name="1.vars.1" value='//*[@class="quote"]'/>
+            <param name="1.format" value="Excuse : $(vars.1)s"/>
+            <param name="1.user-agent" value="Mozilla/5.0 (X11; Linux x86_64; rv:31.0) Gecko/20100101 Firefox/31.0 Iceweasel/31.4.0"/>
+        </module>
+        <module name="\Erebot\Module\Wordlists">
+            <param name="policy" value="*"/>
+        </module>
+    </modules>
+
+    <networks>
+<!--        <network name="localhost">-->
+<!--            <servers>-->
+<!--                <server url="irc://localhost:6667"/>-->
+<!--            </servers>-->
+
+<!--            <channels>-->
+<!--                <channel name="#Erebot">-->
+<!--                    <modules>-->
+<!--                        <module name="\Erebot\Module\AutoJoin"/>-->
+<!--                    </modules>-->
+<!--                </channel>-->
+<!--            </channels>-->
+<!--        </network>-->
+
+        <network name="IIEns">
+            <servers>
+                <server url="irc://irc.iiens.net:6667"/>
+<!--                <server url="ircs://irc.iiens.net:7000?verify_peer=0"/>-->
+            </servers>
+
+            <channels>
+                <channel name="#Erebot">
+                    <modules>
+                        <module name="\Erebot\Module\AutoJoin"/>
+                    </modules>
+                </channel>
+            </channels>
+        </network>
+    </networks>
+</configuration>
